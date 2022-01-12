@@ -5,9 +5,9 @@
     <header>
         <a href="#" class="logo">Otmane</a>
         <nav class="navigation">
-            <a href="#services">services</a>
-            <a href="#projects">projects</a>
-            <a href="#contacts">contacts</a>
+            <% for (let i = 0; i < data1[0].menu.length; i++) { %>
+                <a href="#<%= data1[0].menu[i] %>"><%= data1[0].menu[i] %></a>
+            <% } %>
         </nav>
     </header>
     <!-- Header End -->
